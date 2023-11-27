@@ -1,0 +1,35 @@
+Script started on 2023-02-23 13:42:09-08:00
+]0;jaholt@WWWSTU-P01:~/hw2[jaholt@WWWSTU-P01 hw2]$ xit[K[K[Kexit[K[K[K[Kgcc -ansi -Wall distance.c -o distance
+]0;jaholt@WWWSTU-P01:~/hw2[jaholt@WWWSTU-P01 hw2]$ ./distance
+Please enter two distance values m1, y1, f1, i1, m2, y2, f2, and i2: 
+m1: 30
+
+y1: 1680
+
+f1: 13
+
+i1: 25
+
+m2: 45
+
+y2: 3650
+
+f2: 35
+
+i2: 13
+
+i1: 1
+f1: 0
+y1: 1685
+m1: 30
+Distance 1 is 30 miles, 1685 yards, 0 feet, 1 inches.
+i2: 1
+f2: 0
+y2: 142
+m2: 47
+Distance 2 is 47 miles, 142 yards, 0 feet, 1 inches.
+The sum of the distances is 78 miles, 67 yards, 0 feet, and 2 inches.
+]0;jaholt@WWWSTU-P01:~/hw2[jaholt@WWWSTU-P01 hw2]$ exit
+exit
+
+Script done on 2023-02-23 13:43:28-08:00

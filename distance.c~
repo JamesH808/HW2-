@@ -1,0 +1,122 @@
+/*  Distance.c: a program that computes the sum of two non-negative integer distances.  */
+/*                                                                                      */
+/*  author: James Holt                                                                  */
+/*                                                                                      */
+/*  modifications:                                                                      */
+/*  2/16/2023 RD initial version                                                        */
+
+#include <stdio.h>
+
+/*  main function */
+
+int main(void)
+{
+ 
+  
+        /* variable definitions */
+
+        int m1 , y1 , f1, i1, m2, y2, f2, i2, t1, t2, m3, y3, f3, i3, t3;
+
+        /* input section */
+
+        printf("Please enter two distance values m1, y1, f1, i1, m2, y2, f2, and i2: \n");
+        printf("m1: ");
+	scanf("%d", &m1);
+	printf("\n");
+	
+	printf("y1: ");
+	scanf("%d", &y1);
+	printf("\n");
+	
+	printf("f1: ");
+	scanf("%d", &f1);
+        printf("\n");
+
+	printf("i1: ");
+	scanf("%d", &i1);
+        printf("\n");
+
+	printf("m2: ");
+	scanf("%d", &m2);
+        printf("\n");
+
+	printf("y2: ");
+        scanf("%d", &y2);
+        printf("\n");
+
+	printf("f2: ");
+        scanf("%d", &f2);
+        printf("\n");
+
+	printf("i2: ");
+        scanf("%d", &i2);
+	printf("\n");
+
+
+        /* computation section */
+	
+
+	t1 = i1 + (f1 * 12) + (y1 * 36) + (m1 * 63360);
+
+	t2 = i2 + (f2 * 12) + (y2 * 36) + (m2 * 63360);
+
+	t3 = t1 + t2;
+
+	
+	i1 = t1 % 12;
+
+	t1 = t1 / 12;
+
+	f1 = t1 % 3;
+
+	t1 = t1 / 3;
+
+	y1 = t1 % 1760;
+
+	m1 = t1 / 1760;
+
+
+	i2 = t2	% 12;
+
+        t2 = t2	/ 12;
+
+        f2 = t2	% 3;
+
+        t2 = t2	/ 3;
+
+        y2 = t2	% 1760;
+
+        m2 = t2	/ 1760;
+
+
+	i3 = t3 % 12;
+
+        t3 = t3 / 12;
+
+        f3 = t3 % 3;
+
+        t3 = t3 / 3;
+
+        y3 = t3 % 1760;
+
+        m3 = t3 / 1760;
+
+	
+        /* output section */
+
+	printf("i1: (%d)\n", i1);
+	printf("f1: (%d)\n", f1);
+	printf("y1: (%d)\n", y1);
+	printf("m1: (%d)\n", m1);
+	printf("Distance 1 is (%d) miles, (%d) yards, (%d) feet, (%d) inches.\n", m1 , y1, f1, i1);
+	printf("i2: (%d)\n", i2);
+        printf("f2: (%d)\n", f2);
+	printf("y2: (%d)\n", y2);
+        printf("m2: (%d)\n", m2);
+	printf("Distance 2 is (%d) miles, (%d) yards, (%d) feet, (%d) inches.\n", m2, y2, f2, i2);
+	printf("The sum of the distances is (%d) miles, (%d) yards, (%d) feet, and (%d) inches.\n", m3, y3, f3, i3); 
+
+	
+	return 0;
+
+}
